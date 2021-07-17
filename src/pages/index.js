@@ -2,7 +2,7 @@ import React from "react"
 import Header from "../components/header"
 import Layout from "../components/layout"
 
-export default () => (
+const Index = () => (
   <Layout>
     <div style={{ color: `purple`, fontSize: `24px` }}>
       <Header title="Hello world!" />
@@ -11,3 +11,5 @@ export default () => (
     </div>
   </Layout>
 )
+
+export default Index

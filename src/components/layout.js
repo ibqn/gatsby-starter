@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const LinkList = props => (
+const LinkList = (props) => (
   <li style={{ display: `inline-block`, marginRight: `1rem` }}>
     <Link to={props.to} style={{ textTransform: `uppercase` }}>
       {props.children}
@@ -9,7 +9,7 @@ const LinkList = props => (
   </li>
 )
 
-export default ({ children }) => (
+const Layout = ({ children }) => (
   <div style={{ margin: `3rem auto`, maxWidth: `650px`, padding: `0 1rem` }}>
     <header
       style={{
@@ -38,3 +38,5 @@ export default ({ children }) => (
     {children}
   </div>
 )
+
+export default Layout

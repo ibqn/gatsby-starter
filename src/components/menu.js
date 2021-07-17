@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-export default () => (
+const Menu = () => (
   <ul>
     <li>
       <Link to="/">home</Link>
@@ -14,3 +14,5 @@ export default () => (
     </li>
   </ul>
 )
+
+export default Menu

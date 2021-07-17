@@ -1,18 +1,24 @@
 import React from "react"
-import styles from "./contact.module.scss"
+import {
+  user,
+  description,
+  username,
+  excerpt,
+  avatar,
+} from "./contact.module.scss"
 import Layout from "../components/layout"
 
-const User = props => (
-  <div className={styles.user}>
-    <img src={props.avatar} className={styles.avatar} alt="" />
-    <div className={styles.description}>
-      <h2 className={styles.username}>{props.username}</h2>
-      <p className={styles.excerpt}>{props.excerpt}</p>
+const User = (props) => (
+  <div className={user}>
+    <img src={props.avatar} className={avatar} alt="" />
+    <div className={description}>
+      <h2 className={username}>{props.username}</h2>
+      <p className={excerpt}>{props.excerpt}</p>
     </div>
   </div>
 )
 
-export default () => (
+const Contact = () => (
   <Layout>
     <h1>Modules</h1>
     <p>beautiful</p>
@@ -28,3 +34,5 @@ export default () => (
     />
   </Layout>
 )
+
+export default Contact
